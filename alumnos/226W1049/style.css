@@ -1,0 +1,120 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #b7a3e0; /* morado muy claro */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    background: #b133c7;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(240, 0, 0, 0.89);
+    padding: 20px 40px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #f47f20; /* naranja */
+}
+
+.logo img {
+    height: 150px;
+    border-radius: 50px;
+    border: 3px solid #e95803;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #5a2d82; /* morado fuerte */
+    transition: 0.3s;
+    font-size: 1.5rem; /* Cambia el tamaño de la letra (ajusta a tu gusto) */
+    font-weight: bold; /* (opcional) para que se vean más destacadas */
+}
+
+.nav a:hover {
+    color: #f47f20;
+}
+
+/* Layout */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Columna izquierda */
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 100px;
+    border: 3px solid #5a2d82;
+}
+
+.info {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #f47f20;
+}
+
+/* Columna derecha */
+.right section {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid #5a2d82;
+}
+
+.right h2 {
+    color: #700cc7dc;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+form button {
+    background: #f47f20;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #d76610;
+}
