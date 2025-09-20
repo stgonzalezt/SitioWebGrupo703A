@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio - Marvin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="portada">
+    <img src="imagenes/logo.png" alt="Logo">
+  </div>
+
+  <!-- Perfil -->
+  <div class="profile-section">
+    <img src="imagenes/perfil.jpg" alt="Foto de perfil" class="profile-img">
+    <h1 class="nombre-destacado">Marvin Anselmo Gines Jacome</h1>
+    <p class="titulo-destacado"><b>Alumno del Tecnológico Superior de Zongolica - Ingeniería en Sistemas Computacionales</b></p>
+    <div class="info-personal">
+      <p><b>Origen:</b> Camerino Z. Mendoza, Veracruz</p>
+      <p><b>Edad:</b> 26 años</p>
+      <p><b>Sexo:</b> Masculino</p>
+      <p><b>Nivel de estudio:</b> Universidad</p>
+      <p><b>Instituto:</b> Tecnológico Superior de Zongolica</p>
+    </div>
+  </div>
+
+  <!-- Habilidades -->
+  <section id="Habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Trabajo en equipo</li>
+      <li>Cooperador</li>
+      <li>Sociable</li>
+      <li>Responsable</li>
+      <li>Creativo</li>
+    </ul>
+
+    <h3>Lista de Conocimientos:</h3>
+    <ol>
+      <li>Creación de sitios web</li>
+      <li>Creación de APK</li>
+      <li>Administración de servidores</li>
+    </ol>
+
+    <h3>Debilidades:</h3>
+    <ul>
+      <li>Impaciente</li>
+      <li>Dificultad para delegar</li>
+    </ul>
+  </section>
+
+  <!-- Formulario -->
+  <section class="contact-form">
+    <h2>Formulario de Contacto</h2>
+    <form id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="fecha-inicio">Fecha de Inicio Disponible:</label>
+        <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+      </div>
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <!-- Enlaces CV y LinkedIn -->
+  <div class="links">
+    <a href="#" class="link-btn">Descargar CV</a>
+    <a href="#" class="link-btn">LinkedIn</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Marvin Anselmo Gines Jacome. Todos los derechos reservados.
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
