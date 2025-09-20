@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iveth- Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        
+        <nav class="navbar">
+            <div class="logo">LOGO</div>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="active">INICIO</a></li>
+                <li><a href="#acerca">ACERCA DE MI</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#portafolio">PORTFOLIO</a></li>
+                <li><a href="#experiencia">EXPERIENCIA</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+        <section id="inicio" class="content-section hero">
+            <div class="text-content">
+                <p class="greeting">HOLA</p>
+                <h1>ME LLAMO: <br><span class="highlight">Marina Iveth Cabello Pertalta</span></h1>
+                <p class="description">Soy estudiante de ingenieria en sistemas computacionales .Detras de mi mucha ilusion,muchos aprendizajes y esfuerzoS,pero tambien grandes recompensas.Me gusta viajar conocer lugares con vistas hermosas.
+                </p>
+                <a href="#" class="btn-download">DESCARGAR CV</a>
+            </div>
+            <div class="image-content">
+                <img src="yo.jpg.jpeg" alt="Marina Iveth Cabello Peralta"></div>
+        </section>
+        <section id="acerca" class="content-section">
+            <h2>Acerca de mí</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Marina Iveth Cabello Peralta </li>
+                    <li>22 Años</li>
+                    <li>Resolución de problemas , HTML, CSS y JavaScript.</li>
+                    <li>Soy estudiante del  Instituto Tecnológico Superior de Zongolica .</li>
+                </ul>
+            </div>
+        </section>
+        <section id="servicios" class="content-section">
+            <h2>Mis Servicios</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Diseño y desarrollo de sitios web.</li>
+                    <li>Creacion de paginas web basicas.</li>
+                    <li>Desarrollo de aplicaciones web.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="portafolio" class="content-section">
+            <h2>Portafolio</h2>
+            <div class="section-content">
+                <div class="project-item">
+                    <h3>Proyecto 1: Página sobre una clinica </h3>
+                    <p>Una página web dedicada a brindar servicios a personas de bajos recursos desarrollada con HTML y CSS.</p>
+                </div>
+                <div class="project-item">
+        </section>
+        <section id="experiencia" class="content-section">
+            <h2>Experiencia</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Empresa dedicada a la elaboracion  de alimentos .</li>
+                    <li>Lideré el desarrollo de un proyecto en equipo para la asignatura de Desarrollo Web.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contacto" class="content-section form-section">
+            <h2>📩 Contáctame</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+
+                <label for="edad">Edad (18-99):</label>
+                <input type="number" id="edad" name="edad" required min="18" max="99">
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecciona tu género</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+
+                <label for="terminos">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    Acepto los términos y condiciones
+                </label>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios"></textarea>
+
+                <button type="submit">Enviar</button>
+                <button type="reset" class="btn-secundario">Limpiar</button>
+            </form>
+        </section>
+        </div>
+
+</body>
+</html>

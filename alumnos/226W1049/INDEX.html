@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Encabezado -->
+        <header class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav class="nav">
+                <a href="#acerca">Acerca</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <!-- Columna izquierda -->
+            <div class="left">
+                <div class="foto">
+                    <img src="Guapo.jpg" alt="Jesus Alejandro Ramirez Rendon">
+                </div>
+                <div class="info">
+                    <h3>Información Personal</h3>
+                    <ul>
+                        <li><strong>Nombre:</strong> Jesús Alejandro Ramirez Rendon</li>
+                        <li><strong>Edad:</strong> 27 años</li>
+                        <li><strong>Habilidades:</strong> Resolución de problemas lógicos, HTML, CSS y JavaScript</li>
+                        <li><strong>Descripción:</strong> Soy un estudiante del Instituto Tecnológico Superior de Zongolica con gran capacidad de aprendizaje autónomo y pasión por el desarrollo web.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="right">
+                <section id="acerca" class="about">
+                    <h2>Sobre mí</h2>
+                    <p>Esta es mi página personal donde conocerás mis conocimientos y experiencias. Me apasiona el desarrollo web y disfruto aprender nuevas tecnologías. Busco crear proyectos útiles, bien estructurados y visualmente atractivos.</p>
+                </section>
+
+                <section id="experiencia" class="experience">
+                    <h2>Experiencia</h2>
+                    <ul>
+                        <li><strong>Prácticas profesionales:</strong> Empresa A (2023 - 2024) - Desarrollador Junior.</li>
+                        <li><strong>Proyecto académico:</strong> Lideré el desarrollo de un proyecto en equipo para la asignatura de Desarrollo Web.</li>
+                    </ul>
+                </section>
+
+                <section id="contacto" class="contact">
+                    <h2>Contáctame</h2>
+                    <form>
+                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Tu correo" required>
+                        <textarea placeholder="Tu mensaje" rows="4" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>

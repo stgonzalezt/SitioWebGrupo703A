@@ -1,0 +1,199 @@
+/* Reset básico de márgenes y tipografía */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente principal */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina rellenos por defecto */
+    background: #f8f9f4; /* Color de fondo */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Encabezado */
+header {
+    background: #0077b6; /* Azul */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrado horizontal */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Navegación */
+nav {
+    background: #023e8a; /* Azul más oscuro */
+}
+nav ul {
+    display: flex; /* Distribuye elementos en fila */
+    justify-content: center; /* Centra horizontalmente */
+    flex-wrap: wrap; /* Permite que bajen a otra línea */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Quita viñetas */
+}
+nav ul li {
+    margin: 5px 10px; /* Espaciado entre botones */
+}
+nav ul li a {
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Quita subrayado */
+    padding: 8px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s; /* Efecto hover suave */
+}
+nav ul li a:hover {
+    background: #00b4d8; /* Azul más claro al pasar */
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+/* ==== NUEVO: Columnas con Grid ==== */
+.grid-columnas
+    display: grid; /* Activa Grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px; /* Espacio entre columnas */
+}
+.columna {
+    background: #caf0f8; /* Fondo celeste */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Tablas */
+table {
+    width: 100%; /* Ocupa todo el ancho */
+    border-collapse: collapse; /* Colapsa bordes */
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+th {
+    background: #0077b6;
+    color: white;
+}
+
+/* Imágenes */
+#imagenes img {
+    width: 100%; /* Ocupan todo el ancho disponible */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Objetos multimedia */
+#multimedia video,
+#multimedia iframe,
+#multimedia audio {
+    width: 100%; /* Responsivo */
+    max-width: 600px; /* Máximo tamaño */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Centrado */
+    border-radius: 10px;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+button {
+    background: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #023e8a;
+}
+
+/* Pie de página */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/*ESTILOS RESPONSIVOS*/
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 600px) {
+    header {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú vertical */
+        align-items: center;
+    }
+
+    .grid-columnas {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
+/* Tablets (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+        justify-content: space-around;
+    }
+
+    .grid-columnas {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+/* Escritorio (pantallas grandes) */
+@media (min-width: 1025px) {
+    main {
+        width: 80%;
+        margin: auto;
+    }
+
+    .grid-columnas {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    }
+
+    section {
+        max-width: 1000px;
+        margin: 20px auto;
+    }
+}
