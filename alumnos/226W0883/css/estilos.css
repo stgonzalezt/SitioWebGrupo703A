@@ -1,0 +1,158 @@
+/* 🎨 Estilos globales */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Encabezados */
+h1, h2, h3, img {
+  text-align: center;
+  margin: 20px 0;
+  color: #222;
+}
+
+h1 {
+  font-size: 36px;
+  border-bottom: 3px solid #0077b6;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-align: auto;
+}
+
+h2 {
+  font-size: 28px;
+  color: #0077b6;
+  text-align: center;
+}
+
+h3 {
+  font-size: 22px;
+  color: #0096c7;
+}
+
+/* Párrafos */
+p {
+  max-width: 900px;
+  margin: 10px auto;
+  font-size: 18px;
+  text-align: justify;
+  text-align: center;
+}
+
+/* Enlaces */
+a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #023e8a;
+  text-decoration: underline;
+}
+
+/* Listas */
+ul, ol {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+li {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+/* Tablas */
+table {
+  width: 900px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+th, td {
+  padding: 12px 18px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #0077b6;
+  color: white;
+  font-size: 18px;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* Formularios */
+form {
+  width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #023e8a;
+}
+
+/* Multimedia con tamaño fijo */
+#multimedia video, 
+#multimedia iframe, 
+#multimedia audio {
+  display: block;
+  margin: 20px auto;
+  width: 700px;      /* 🔹 Ancho fijo */
+  height: 400px;     /* 🔹 Alto fijo (para video e iframe) */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Ajuste para audio */
+#multimedia audio {
+  height: 50px;   /* 🔹 Tamaño más compacto */
+}
+
+#tituloRegistros{
+    text-align: center;
+}

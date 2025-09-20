@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Grupo 5A">
+  <meta name="description" content="Sitio web del grupo 5A - Inicio">
+  <title>Inicio | Grupo 703A</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #1a1a1a, #450a0a);
+      color: #f0f0f0;
+    }
+
+    header {
+      background: #521414;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #0e0404;
+    }
+
+    header img {
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    h1, h2 {
+      color: #ffffff;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background: #2a2a2a;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.6);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    table th, table td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #af2626;
+    }
+
+    table th {
+      background: #ad5c5c;
+      color: white;
+    }
+
+    table tr:nth-child(even) {
+      background: #ad5c5c;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #1e1e1e;
+      border: 2px solid #05283b;
+      border-radius: 15px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.7);
+    }
+
+    label {
+      font-weight: bold;
+      color: #e6e0eb;
+    }
+
+    input, select, textarea {
+      margin: 8px 0 18px 0;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      background: #2a2a2a;
+      color: white;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #0b0213;
+      outline: none;
+    }
+
+    button {
+      background: #8a272f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #692828;
+      color: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #1d0107;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="emh.jpeg" alt="Foto de perfil" width="200">
+    <h1>Bienvenidos a mi perfil</h1>
+  </header>
+
+  <main>
+
+    <section id="tabla">
+      <h2></h2>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+        </tr>
+        <tr>
+          <td>Emanuel Mendoza Hernandez</td>
+          <td>20</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Descripción</h2>
+      <p>Le gusta jugar futbol, tocar instrumentos y disfruta mucho de la musica. Las personas lo consideran gracioso cuando en realidad es mala onda.</p>
+    </section>
+
+    <h2 style="text-align:center;">Contáctame</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+
+      <label for="edad">Edad (18-99):</label>
+      <input type="number" id="edad" name="edad" required min="18" max="99">
+
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <label for="posicion">Posición:</label>
+      <select id="posicion" name="posicion" required>
+        <option value="">Selecciona tu posición</option>
+        <option value="chalan">Chalán</option>
+        <option value="gerente">Gerente</option>
+        <option value="jefe">Jefe</option>
+      </select>
+
+      <label for="pais">País:</label>
+      <select id="pais" name="pais" required>
+        <option value="">Selecciona tu país</option>
+        <option value="mexico">México</option>
+        <option value="espana">España</option>
+        <option value="colombia">Colombia</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Emanuel Mendoza Hernandez.</p>
+  </footer>
+</body>
+</html>

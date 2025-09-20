@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="VITE DARIANA">
+  <meta name="description" content="Primer practica de un sitio Web con temática personal">
+  <title>Inicio | Sitio Web personal</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <header>
+  <section class="seccion-fondo">
+  <div id="Inicio" class="bloque-imagen">
+  <img src="css/Lv4.png" alt="Logotipo del grupo">
+  </div>
+  <h1>SITIO WEB: DARIANA VITE</h1>
+  </section>
+  </header>
+
+
+    <nav>
+      <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Acerca de mí">Acerca de mí</a></li>
+        <li><a href="#Habilidades">Habilidades</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+  <!-- Foto personal y seccion acerca de mí -->
+
+  <section id="Acerca de mí" class="seccion-acerca seccion-horizontal">
+    <div class="contenedor-interno">
+      <div class="imagen">
+        <img src="css/y1.jpg" alt="Descripción de la imagen">
+      </div>
+      <div class="texto">
+        <h2>Acerca de mí</h2>
+        <p>Soy estudiante del Instituto Tecnológico Superior de Zongolica, 
+        curso la carrera de Ingeniería en Sistemas Computacionales y estoy en el séptimo semestre.
+        En mi tiempo libre me gusta practicar voleibol y basquetbol, escuchar música y
+        pasar tiempo con mis amigos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTAS HABILIDADES -->
+  <section id="Habilidades">
+    <h2 class="titulo-central">Habilidades</h2>
+    
+    <div class="listas-container">
+      <div class="bloque-lista">
+        <h3 class="subtitulo">Blandas:</h3>
+        <ul class="lista-habilidades">
+          <li>
+            <span class="etiqueta">Capacidad de concentración</span>
+            <div class="barra">
+                <div class="relleno" style="width: 90%;"></div>
+            </div>
+          </li>
+
+          <li>
+            <span class="etiqueta">Creatividad</span>
+            <div class="barra">
+              <div class="relleno" style="width: 80%;"></div>
+            </div>
+          </li>
+            
+          <li>
+            <span class="etiqueta">Resolucion de problemas</span>
+            <div class="barra">
+              <div class="relleno" style="width: 95%;"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      
+      <div class="bloque-lista">
+          <h3 class="subtitulo">Tecnológicas:</h3>
+          <ul class="lista-habilidades">
+            <li>
+              <span class="etiqueta">Desarrollo web básico</span>
+              <div class="barra">
+                  <div class="relleno" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li>
+              <span class="etiqueta">Diseño de interfaces simples</span>
+              <div class="barra">
+                <div class="relleno" style="width: 85%;"></div>
+              </div>
+            </li>
+              
+            <li>
+              <span class="etiqueta">Manejo de herramientas ofimaticas</span>
+              <div class="barra">
+                <div class="relleno" style="width: 80%;"></div>
+              </div>
+              </li>
+            </ul>
+        </div>
+  </section>
+
+
+    <section id="Contacto">
+    <h2 class="titulo-central">Trabaja con Nosotros</h2>
+
+    <form action="#" method="post">
+        <div class="columna">
+        <!-- Texto obligatorio -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+        
+        <!-- Email con validación -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+
+        <!-- Lista desplegable -->
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+            <option value="">Selecciona tu país</option>
+            <option value="mexico">México</option>
+            <option value="espana">España</option>
+            <option value="colombia">Colombia</option>
+        </select>
+
+        <!-- Texto obligatorio -->
+        <label for="cvlink">Enlace al CV/LinkedIn:</label>
+        <input type="url" id="cvlink" name="cvlink" required>
+        </div>
+
+        <div class="columna">
+        <!-- Texto obligatorio -->
+        <label for="nombre">Apellidos:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Escribe tus apellidos">
+
+        <!-- Teléfono -->
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required placeholder="Ej. 123 456 7890">
+
+        <!-- Fecha obligatoria -->
+        <label for="fecha">Fecha de inicio:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <!-- Botones -->
+        <button type="submit">Aplicar</button>
+        <h4 style="text-align: center; margin-top: 10px;">Gracias, estaremos en contacto pronto.</h4>
+        </div>
+      </form>
+    </section>
+  
+    <section>
+      <h2>Sobre Nosotros</h2>
+      <div class="h4">
+      <h4>Este sitio web contiene información de los integrantes y proyectos del grupo.</h4>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="h4">
+    <h4>&copy; 2025 Grupo 703A</h4>
+    </div>
+  </footer>
+</body>
+</html>

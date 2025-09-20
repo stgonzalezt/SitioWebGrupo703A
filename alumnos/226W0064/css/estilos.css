@@ -1,0 +1,394 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina rellenos por defecto */
+    background: #06141B; /* Color de fondo */
+    color:#CCD0CF;
+    line-height: 1.5; /* Espaciado entre líneas */
+} 
+
+header {
+    color: #CCD0CF; /* Texto blanco */
+    text-align: center; /* Centrado horizontal */
+    box-shadow: 0 0 5px #CCD0CF; /* Efecto luminoso tech */
+}
+
+nav ul {
+    display: flex; /* Distribuye elementos en fila */
+    justify-content: center; /* Centra horizontalmente */
+    flex-wrap: wrap; /* Permite que bajen a otra línea */
+    padding: 0;
+    margin: 10;
+    list-style: none; /* Quita viñetas */
+}
+nav ul li {
+    margin: 0px 20px; /* Espaciado entre botones */
+}
+nav ul li a {
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  color: #859fc0;
+  text-decoration: none; /* Quita subrayado */
+  padding: 0px 0px; /* Espaciado interno */
+  display: inline-block;
+  font-size: 1rem;
+}
+nav ul li a:hover {
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+  color: #54ACBF;
+
+}
+
+/*SECCIONES*/
+
+/* LOGO TECNM */
+.bloque-imagen {
+  width: 30%; /* ancho fijo o adaptable */
+  margin-left: 0; /* alineado a la izquierda */
+}
+
+.bloque-imagen img {
+  width: 100%; /* ocupa todo el ancho del contenedor */
+  display: block; /* evita espacios indeseados debajo de la imagen */
+  margin-bottom: 10px; /* espacio entre imagen y texto */
+}
+
+.bloque-imagen p {
+  margin: 0;
+  text-align: left;
+}
+
+/*IMAGEN FONDO ENCABEZADO*/
+.seccion-fondo {
+  background: url('ef.jpg') no-repeat center center;
+  background-size: cover;
+  height: auto;
+  position: relative;
+}
+
+.seccion-fondo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(15, 15, 56, 0.521); /* Capa blanca semitransparente */
+  z-index: 0;
+}
+
+.seccion-fondo > * {
+  position: relative;
+  z-index: 1;
+}
+
+/*SECCION ACERCA DE MÍ*/
+
+.seccion-acerca {
+    margin-bottom: 10px;
+    background: #061F33;
+}
+
+.seccion-horizontal {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  gap: 20px; /* Espacio entre imagen y texto */
+  padding: 20px;
+}
+
+.imagen img {
+  width: 250px;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 0 20px #27545e; /* Borde difuminado claro */
+}
+
+.contenedor-interno {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.texto {
+  color: #CCD0CF;
+  text-align: center;
+}
+
+/*PARRAFO*/
+p {
+    margin: auto;
+    padding: 1em;
+    font-size: 1.2rem;
+  }
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: auto;
+    padding: 1em;
+}
+
+
+  /*IMAGENES GENERALES*/
+#imagenes img {
+    width: 100%; /* Ocupan todo el ancho disponible */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/*LISTAS*/
+
+.titulo-central {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #CCD0CF;
+  font-size: 1.7rem;
+}
+
+/* Contenedor base con Flexbox */
+.listas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+/* Estilo general para cada bloque de lista */
+.bloque-lista {
+  flex: 1 1 45%; /* Ocupa hasta 45% del ancho, se adapta */
+  box-sizing: border-box;
+}
+
+/* Subtítulo general */
+.subtitulo {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #54ACBF;
+}
+
+/*BARRA LISTA*/
+.lista-habilidades {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-habilidades li {
+  margin-bottom: 20px;
+}
+
+.etiqueta {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.barra {
+  width: 90%;
+  background-color: #3b536a;
+  height: 10px;
+  border: 2px solid #00f7ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00f7ff;
+  overflow: hidden;
+}
+
+.relleno {
+  height: 100%;
+  background-color: #80e0eb;
+  border-radius: 5px;
+  transition: width 3s ease;
+}
+
+/*FORMULARIO*/
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+            gap: 20px; /* Espacio entre columnas */
+            max-width: 800px;
+            background: linear-gradient(to bottom right, #4a5c6a 0%, #06141B 75%);/* De izquierda a derecha */
+            padding: 20px;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        .columna {
+          display: flex;
+          flex-direction: column;
+        }
+
+        input, select, textarea, button {
+        margin: 5px 0 15px 0;
+        padding: 8px;
+        box-sizing: border-box;
+        border: none;
+        }
+
+
+        input, select, textarea {
+            background-color: #06141B;
+            color: white; /* Para que el texto sea legible sobre fondo oscuro */
+        }
+       
+        button {
+            margin: 20px 0 0 0;
+            width: auto;
+            cursor: pointer;
+            background: linear-gradient(to right, #96bfc3, #27545e);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+        button:hover {
+            background: white;
+            color: #06141B;
+            font-weight: bold;
+        }
+        label {
+            font-weight: bold;
+        }
+
+
+/* RESPONSIVO imagen fondo*/
+
+/* Teléfonos pequeños */
+@media (max-width: 600px) {
+  .bloque-imagen {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .bloque-imagen img {
+    width: 80%;
+    margin: 0 auto 10px;
+  }
+
+  .bloque-imagen p {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+/* Tablets y laptops medianas */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .bloque-imagen {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .bloque-imagen img {
+    width: 100%;
+  }
+
+  .bloque-imagen p {
+    text-align: left;
+  }
+}
+
+
+
+/*RESPONSIVO acerca de mí*/
+@media (max-width: 768px) {
+  .seccion-horizontal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenedor-interno {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .imagen img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .texto {
+    padding-top: 20px;
+  }
+
+  .texto h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contenedor-interno {
+    max-width: 90%;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .imagen img {
+    width: 220px;
+  }
+
+}
+
+@media (min-width: 1025px) {
+  .contenedor-interno {
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .imagen img {
+    width: 250px;
+  }
+
+}
+
+
+
+/*RESPONsIVO LISTAS*/
+
+/* 📱 Teléfonos móviles */
+@media (max-width: 768px) {
+  .bloque-lista {
+    flex: 1 1 100%; /* Ocupa todo el ancho */
+    margin-bottom: 20px;
+  }
+
+  .subtitulo {
+    font-size: 1.3rem;
+  }
+}
+
+/* 💻 Tablets y laptops medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bloque-lista {
+    flex: 1 1 48%;
+  }
+
+  .subtitulo {
+    font-size: 1.3rem;
+  }
+}
+
+/* 🌐 Escritorio grande (laptops grandes y monitores) */
+@media (min-width: 1025px) {
+  .bloque-lista {
+    flex: 1 1 45%;
+  }
+
+  .subtitulo {
+    font-size: 1.3rem;
+  }
+}
+
