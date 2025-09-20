@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Agencia">
+  <meta name="description" content="Sitio web Agencia de Automoviles">
+  <title>Inicio | Mi pagina web</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    
+    <img src="foto.png.jpeg" id="" name="Imagenperfil" alt="Logotipo del grupo" width="300">
+    <h1>Bienvenidos a Mi pagina web. </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Acerca de mi</a></li>
+        <li><a href="alumnos.html">Pasatientos Favoritos</a></li>
+        <li><a href="contacto.html">Metas a llegar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2 > Presentacion</h2>
+      <p>Mi Nombre es Eliseo Teran Oaxaca .</p>
+      <p>Soy estudiate de la carrera en Ingenieria en Sistemas Computacionales</p>
+      <p>me gusta la Tecnologia</p>
+    </section>
+     <h2 id="tituloRegistros"> Registro </h2>
+
+    <form action="#" method="post">
+        <!-- Texto obligatorio -->
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre"><br>
+
+        <!-- Email con validación -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com"><br>
+
+        <!-- Contraseña con longitud mínima -->
+        <label for="password">Contraseña (mínimo 6 caracteres):</label>
+        <input type="password" id="password" name="password" required minlength="6">><br>
+
+        <!-- Número con rango -->
+        <label for="edad">Edad (18-99):</label>
+        <input type="number" id="edad" name="edad" required min="18" max="99">><br>
+
+         <form action="#" method="post">
+        <!-- Texto obligatorio -->
+        <label for="nombre">Numero Telefonico:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu Numero Telefonico">><br>
+
+
+        <!-- Fecha obligatoria -->
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" required>><br>
+
+       
+        <!-- Lista desplegable -->
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+            <option value="">Selecciona tu país</option>
+            <option value="mexico">México</option>
+            <option value="espana">España</option>
+            <option value="colombia">Colombia</option>
+        </select>><br>
+
+        <!-- Radio buttons -->
+        <p>Género:</p>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label>><br>
+
+        <!-- Checkbox -->
+        <p>Acepto los términos y condiciones:</p>
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Sí, acepto</label>><br>
+
+        <!-- Área de texto -->
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios"></textarea>><br>
+
+        <!-- Botones -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; Mi Pagina Web 2025</p>
+  </footer>
+</body>
+</html>
