@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario calculadora personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #0e053e;
+            border-radius: 20px;
+        }
+        input, select, textarea, button {
+            margin: 5px 0 15px 0;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            width: auto;
+            cursor: pointer;
+            background-color: #043c20;
+            color: rgb(241, 237, 237);
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #075612;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora personal</h1>
+
+    <form action="#" method="post">
+        <!-- Texto obligatorio -->
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+        <!-- Email con validación -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+
+        <!-- Contraseña con longitud mínima -->
+        <label for="password">Contraseña (mínimo 6 caracteres):</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <!-- Número con rango -->
+        <label for="edad">Edad (18-99):</label>
+        <input type="number" id="edad" name="edad" required min="18" max="99">
+
+        <!-- Fecha obligatoria -->
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <!-- Rango -->
+        <label for="satisfaccion">Nivel de satisfacción (0-10):</label>
+        <input type="range" id="satisfaccion" name="satisfaccion" min="0" max="10">
+
+        <!-- Lista desplegable -->
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+            <option value="">Selecciona tu país</option>
+            <option value="mexico">México</option>
+            <option value="espana">España</option>
+            <option value="colombia">Colombia</option>
+        </select>
+
+        <!-- Radio buttons -->
+        <p>Género:</p>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label>
+
+        <!-- Checkbox -->
+        <p>Acepto los términos y condiciones:</p>
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Sí, acepto</label>
+
+        <!-- Área de texto -->
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios"></textarea>
+
+        <!-- Botones -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>

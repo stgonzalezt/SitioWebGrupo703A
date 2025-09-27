@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Jesica Nieto Marcelino" />
+  <meta name="description" content="CV profesional de Jesica Nieto Marcelino" />
+  <title>CV | Jesica Nieto Marcelino</title>
+  <link rel="stylesheet" href="Diseño.CSS" />
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <img src="cb.jpg" alt="Jesica Nieto Marcelino" class="perfil">
+      <h1>Mi Pagina Web</h1>
+      <h3>Jesica Nieto Marcelino</h3>
+      <p class="subtitulo">
+       Estudiante de Ingenieria en Sistemas Computacionales, cursando el septimo semestre en el Instituto Tecnologico Superior de Zongolica.
+      Apasionada en el desarrollo de Software, base de datos y la ciberseguridad, con experiencia en desarrollo de proyectos academicos usando Java y tecnologias web.
+      Busco integrarme a un equipo de trabajo donde logre aplicar y reforzar mis conocimientos en un entorno profesional.
+      </p>
+
+      <section class="datos-personales">
+         <table>
+    <tr>
+      <th>Dirección</th>
+      <td>Nogales Veracruz localidad agricola lazaro cardes</td>
+    </tr>
+    <tr>
+      <th>Teléfono</th>
+      <td>95122268226</td>
+    </tr>
+    <tr>
+      <th>Edad</th>
+      <td>20 años</td>
+    </tr>
+    </table>
+</section>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#idiomas">Idiomas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="habilidades">
+        <h2>💡 Habilidades</h2>
+        <div class="lista">
+          <h3>Blandas</h3>
+          <ul>
+            <li>Trabajo en equipo</li>
+            <li>Atención al cliente</li>
+            <li>Pensamiento lógico</li>
+            <li>Adaptabilidad</li>
+            <li>Comunicación efectiva</li>
+          </ul>
+          <h3>Técnicas</h3>
+          <ul>
+            <li>Lenguajes de programacion:Java, CSS</li>
+            <li>Desarrollo Web:HTML</li>
+            <li>Base de datos:MySQL, PostgreSQL</li>
+            <li>Sistemas Operativos:Windows</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="formacion">
+        <h2>🎓 Formación Académica</h2>
+        <p><strong>Ingeniería en Sistemas Computacionales</strong><br>
+        Instituto Tecnológico Superior de Zongolica<br>
+        2022 - Actualidad (7° semestre)<br>
+        Promedio: 9.4/10</p>
+      </section>
+
+      <section id="idiomas">
+        <h2>🌍 Idiomas</h2>
+        <ul>
+          <li>Español (nativo)</li>
+          <li>Inglés (básico)</li>
+        </ul>
+      </section>
+
+      <section id="galeria">
+  <h2>🖼️ Galería</h2>
+  <div class="galeria-grid">
+    <img src="ISC.png" alt="Imagen relacionada a informática" />
+    <img src="Imagen de WhatsApp 2023-03-16 a las 14.26.10.jpg" alt="Otra imagen informática" />
+    <img src="OIP.webp" alt="Ejemplo" />
+  </div>
+  <!--Multimedias-->
+</section>
+<section id="multimedia">
+  <h2>Multimedia</h2>
+
+  <!-- Imágenes -->
+  <div class="multimedia-imagenes">
+    <h3>Imágenes</h3>
+    <img src="https://universidadenlinea.umov.mx/wp-content/uploads/2021/10/07-BLOG-ing-sistemas-1.jpg" alt="ISC" />
+    <img src="https://tse4.mm.bing.net/th/id/OIP.9Bxr-AxYTkM1lJUUQ3vEzgHaEJ?w=800&h=448&rs=1&pid=ImgDetMain&o=7&rm=3" alt="imagen" />
+  </div>
+
+  <!-- Video -->
+  <div class="multimedia-video">
+    <h3>Video</h3>
+    <video controls width="400">
+      <source src="https://www.bing.com/videos/riverview/relatedvideo?q=proyectos+de+el+Instituto+Tecnologico+Superior+de+Zongolica+en+la+carrera+de+ingenieria+de+sistemas+computacionales&&view=riverview&mmscn=mtsc&mid=501BC95D7EE576DE3A34501BC95D7EE576DE3A34&&aps=48&FORM=VMSOVR" type="video">
+    </video>
+  </div>
+
+  <!-- Audio -->
+  <div class="multimedia-audio">
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  </div>
+</section>
+<!--formulario de contacto-->
+
+      <section id="contacto">
+        <h2>📬 Formulario de Contacto</h2>
+        <form>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required />
+
+          <label for="fecha">Fecha de nacimiento</label>
+          <input type="date" id="fecha" name="fecha" required />
+
+          <label for="pais">País</label>
+          <select id="pais" name="pais" required>
+            <option value="">Selecciona tu país</option>
+            <option value="mexico">México</option>
+            <option value="espana">España</option>
+            <option value="colombia">Colombia</option>
+          </select>
+
+          <label>Género</label>
+          <div class="radio-group">
+            <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+            <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+            <label><input type="radio" name="genero" value="otro"> Otro</label>
+          </div>
+
+          <label><input type="checkbox" required> Acepto los términos y condiciones</label>
+
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Jesica Nieto Marcelino - Ingeniería en Sistemas</p>
+    </footer>
+
+  </div>
+</body>
+</html>
